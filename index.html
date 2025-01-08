@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonroeEmpire: Your Trusted Realtor in Athens and Beyond</title>
+    <!--======== Custom CSS Link ========-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--======== Google Font Links ========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="" class="logo">
+          <ion-icon name="home-outline"></ion-icon> Monroe Empire
+        </a>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>About Me</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Services</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn btn-secondary">Signup</a>
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="menu-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-hidden="true"
+            class="close-icon"
+          ></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <!--======== Main =========-->
+
+    <main>
+      <article class="article">
+        <section class="section hero" aria-label="hero">
+          <div class="container">
+            <div class="hero-bg">
+              <div class="hero-content">
+                <h1 class="h1 hero-title">Monroe Empire</h1>
+
+                <p class="hero-text">
+                  Let me help you find your dream home or guide you through the
+                  selling process to get the best value for your property. Your
+                  goals are my priority.
+                </p>
+              </div>
+            </div>
+
+            <div class="hero-form-wrapper">
+              <div class="form-tab">
+                <button class="tab-btn active" data-tab-btn>Buy</button>
+                <button class="tab-btn" data-tab-btn>Sell</button>
+                <button class="tab-btn" data-tab-btn>Rent</button>
+              </div>
+
+              <form action="/search" method="GET" class="hero-form">
+                <div class="input-wrapper">
+                  <label for="search" class="input-label">Search:</label>
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Search your home"
+                    required
+                    class="input-field"
+                  />
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="category" class="input-label"
+                    >Select Categories</label
+                  >
+                  <select name="category" id="category" class="dropdown-list">
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="offices">Offices</option>
+                    <option value="townhome">Townhome</option>
+                  </select>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="min-price" class="input-label">Min Price:</label>
+                  <input
+                    type="number"
+                    name="min-price"
+                    id="min-price"
+                    class="input-field"
+                    placeholder="Enter Min Price"
+                    min="0"
+                    max="10000000"
+                    step="25000"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="max-price" class="input-label">Max Price:</label>
+                  <input
+                    type="number"
+                    name="max-price"
+                    id="max-price"
+                    class="input-field"
+                    placeholder="Enter Max Price"
+                    min="50000"
+                    max="20000000"
+                    step="25000"
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Search now
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <div
+              class="about-banner img-holder"
+              style="--width: 600; --height: 700"
+            >
+              <img
+                src="../images/JaylenMPPC (1).png"
+                width="600"
+                height="700"
+                loading="lazy"
+                alt="About Monroe Empire - Professional realtor photo"
+                class="img-cover"
+              />
+
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+
+            <div class="about-content">
+              <h2 class="h2 section-title">Your Athens Area Realtor!</h2>
+              <p class="section-text">
+                Hi, I’m Jaylen Monroe, a proud Athens native and dedicated
+                Realtor. I’m here to help you buy, sell, or find your dream home
+                with personalized attention and local expertise. Let’s make your
+                real estate goals a reality!
+              </p>
+              <a href="#" class="btn btn-primary">More Information</a>
+            </div>
+          </div>
+        </section>
+
+        <!--============ SECTION ============-->
+        <section class="section service" id="service" aria-label="service">
+          <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-text">
+              This platform is designed to help you buy, sell, or rent
+              properties in the Athens area with ease and confidence.
+            </p>
+            <ul class="service-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3 card-title">Evaluate Property</h3>
+                  <p class="card text">
+                    If you're looking to sell your property or determine an
+                    estimate of its value, I offer a property evaluation service
+                    to help you get started.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3 card-title">Meeting With Me</h3>
+                  <p class="card text">
+                    Ready to take the next step in your real estate journey?
+                    Schedule a meeting to discuss your goals, whether you're
+                    buying, selling, or renting.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="key-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3 card-title">Close The Deal</h3>
+                  <p class="card text">
+                    Closing a real estate deal is exciting, and I’m here to make
+                    it seamless. Let’s make your real estate success a reality!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--=========== PROPERTIES ===========-->
+        <section class="section property" id="property" aria-label="property">
+          <div class="container">
+            <h2 class="h2 section-title">Featured properties</h2>
+            <p class="section-text">
+              Your go-to platform for buying, selling, and renting properties in
+              the Athens area. Explore our featured listings to find your
+              perfect home!
+            </p>
+            <ul class="property-list">
+              <li>
+                <div class="property-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 533"
+                  >
+                    <img
+                      src="../images/img2.jpg"
+                      width="800px"
+                      height="533"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+                  <button class="card-action-btn" aria-label="add to favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >123 Anywhere Street, Athens, GA</a
+                      >
+                    </h3>
+                    <ul class="card-list">
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+
+                        <span class="item-text">7500sqf</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="bed-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">3 Beds</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="man-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">2 Baths</span>
+                      </li>
+                    </ul>
+
+                    <div class="card-meta">
+                      <div>
+                        <span class="meta-title">Price</span>
+                        <span class="meta-text">$350,000</span>
+                      </div>
+
+                      <div>
+                        <span class="meta-title">Rating</span>
+                        <span class="meta-text">
+                          <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+
+                          <span>5.0(24)</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="property-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 533"
+                  >
+                    <img
+                      src="../images/img3.jpg"
+                      width="800px"
+                      height="533"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+                  <button class="card-action-btn" aria-label="add to favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >123 Anywhere Street, Athens, GA</a
+                      >
+                    </h3>
+                    <ul class="card-list">
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+
+                        <span class="item-text">7500sqf</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="bed-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">3 Beds</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="man-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">2 Baths</span>
+                      </li>
+                    </ul>
+
+                    <div class="card-meta">
+                      <div>
+                        <span class="meta-title">Price</span>
+                        <span class="meta-text">$475,000</span>
+                      </div>
+
+                      <div>
+                        <span class="meta-title">Rating</span>
+                        <span class="meta-text">
+                          <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+
+                          <span>5.0(24)</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="property-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 533"
+                  >
+                    <img
+                      src="../images/img4.jpg"
+                      width="800px"
+                      height="533"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+                  <button class="card-action-btn" aria-label="add to favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >123 Anywhere Street, Athens, GA</a
+                      >
+                    </h3>
+                    <ul class="card-list">
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+
+                        <span class="item-text">7500sqf</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="bed-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">3 Beds</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="man-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">2 Baths</span>
+                      </li>
+                    </ul>
+
+                    <div class="card-meta">
+                      <div>
+                        <span class="meta-title">Price</span>
+                        <span class="meta-text">$290,000</span>
+                      </div>
+
+                      <div>
+                        <span class="meta-title">Rating</span>
+                        <span class="meta-text">
+                          <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+
+                          <span>5.0(24)</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="property-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 533"
+                  >
+                    <img
+                      src="../images/img5.jpg"
+                      width="800px"
+                      height="533"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+                  <button class="card-action-btn" aria-label="add to favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >123 Anywhere Street, Athens, GA</a
+                      >
+                    </h3>
+                    <ul class="card-list">
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+
+                        <span class="item-text">7500sqf</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="bed-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">3 Beds</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="man-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">2 Baths</span>
+                      </li>
+                    </ul>
+
+                    <div class="card-meta">
+                      <div>
+                        <span class="meta-title">Price</span>
+                        <span class="meta-text">$385,000</span>
+                      </div>
+
+                      <div>
+                        <span class="meta-title">Rating</span>
+                        <span class="meta-text">
+                          <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+
+                          <span>5.0(24)</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="property-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 533"
+                  >
+                    <img
+                      src="../images/img6.jpg"
+                      width="800px"
+                      height="533"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+                  <button class="card-action-btn" aria-label="add to favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >123 Anywhere Street, Athens, GA</a
+                      >
+                    </h3>
+                    <ul class="card-list">
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+
+                        <span class="item-text">7500sqf</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="bed-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">3 Beds</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="man-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">2 Baths</span>
+                      </li>
+                    </ul>
+
+                    <div class="card-meta">
+                      <div>
+                        <span class="meta-title">Price</span>
+                        <span class="meta-text">$550,000</span>
+                      </div>
+
+                      <div>
+                        <span class="meta-title">Rating</span>
+                        <span class="meta-text">
+                          <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+
+                          <span>5.0(24)</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="property-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 800; --height: 533"
+                  >
+                    <img
+                      src="../images/img7.jpg"
+                      width="800px"
+                      height="533"
+                      loading="lazy"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </figure>
+                  <button class="card-action-btn" aria-label="add to favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >123 Anywhere Street, Athens, GA</a
+                      >
+                    </h3>
+                    <ul class="card-list">
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+
+                        <span class="item-text">7500sqf</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="bed-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">3 Beds</span>
+                      </li>
+
+                      <li class="card-item">
+                        <div class="item-icon">
+                          <ion-icon name="man-outline"></ion-icon>
+                        </div>
+                        <span class="item-text">2 Baths</span>
+                      </li>
+                    </ul>
+
+                    <div class="card-meta">
+                      <div>
+                        <span class="meta-title">Price</span>
+                        <span class="meta-text">$620,000</span>
+                      </div>
+
+                      <div>
+                        <span class="meta-title">Rating</span>
+                        <span class="meta-text">
+                          <div class="rating-wrapper">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                          </div>
+
+                          <span>5.0(24)</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--============ TESTIMONY ============-->
+        <section class="section wrapper wrapper2 top">
+          <div class="container">
+            <div class="text">
+              <div class="heading">
+                <h2>Client's Testimony</h2>
+              </div>
+
+              <div class="para">
+                <p>
+                  We worked with Jaylen Monroe to sell our home in Jefferson,
+                  GA, and purchase a new one in Colbert, GA. He exceeded our
+                  expectations with his dedication, professionalism, and
+                  responsiveness. Jaylen made the entire process stress-free,
+                  even helping us find reliable movers. We couldn’t be happier
+                  and highly recommend him 10/10!
+                </p>
+                <div class="box flex">
+                  <div class="img">
+                    <img src="../images/testimonial1.jpg" alt="" />
+                  </div>
+                  <div class="name">
+                    <h5>Joe Doe</h5>
+                    <h5>Jefferson, GA</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--============ Contact ============-->
+        <section class="section contact" id="contact" aria-label="contact">
+          <div class="container">
+            <h2 class="h2 section-title">Got Questions? Let’s Get in Touch!</h2>
+
+            <p class="section-text">
+              Whether you have questions, need real estate advice, or are ready
+              to take the next step in your buying or selling journey, I’m here
+              to help. Reach out to me today, and let’s discuss how I can assist
+              you in achieving your real estate goals.
+            </p>
+            <button class="btn btn-primary">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span class="span"
+                ><a href="mailto:jaylenmonroec@gmail.com">Contct Me</a></span
+              >
+            </button>
+          </div>
+        </section>
+
+        <!--============ Footer ============-->
+        <footer class="footer">
+          <div class="footer-top">
+            <div class="container">
+              <div class="footer-brand">
+                <a href="#" class="logo">
+                  <ion-icon name="home-outline"></ion-icon> Monroe Empire
+                </a>
+                <p class="footer-text">
+                  Helping you buy, sell, and rent properties in the Athens area.
+                  Contact Jaylen Monroe for expert real estate guidance.
+                </p>
+              </div>
+
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title">Company</p>
+                </li>
+                <li>
+                  <a href="#about" class="footer-link" data-nav-link>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                    <span class="span">About Me</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#services" class="footer-link" data-nav-link>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                    <span class="span">Services</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#properties" class="footer-link" data-nav-link>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                    <span class="span">Pricing</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="footer-link" data-nav-link>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                    <span class="span">Contact Me</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="footer-link" data-nav-link>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                    <span class="span">Login</span>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title">More Links</p>
+                </li>
+                <li>
+                  <a href="#properties" class="footer-link">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                    <span class="span">Listing</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="footer-link">
+                    <ion-icon name="chevron-forward"></ion-icon>
+                    <span class="span">Contact</span>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="footer-list">
+                <li>
+                  <p class="footer-list-title">Contact Details</p>
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <address class="address">
+                    123 Anywhere Street <br />
+                    Suite 400 <br />
+                    Athens, GA
+                    <a href="#" class="address-link">View on Google Maps</a>
+                  </address>
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <a href="mailto:jaylenmonroec@gmail.com" class="footer-link"
+                    >jaylenmonroec@gmail.com</a
+                  >
+                </li>
+
+                <li class="footer-item">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <a href="tel: 123-456-7890" class="footer-link"
+                    >123-456-7890</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="container">
+              <p class="copyright">
+                &copy; 2025 Monroe Empire. All rights reserved by
+                <a href="#" class="copyright-link">Monroe Empire</a>
+              </p>
+
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+        <!--============ BACK-TO-TOP ============-->
+
+        <a
+          href="#top"
+          class="back-to-top"
+          aria-label="back to top"
+          data-back-top-btn
+        >
+          <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+        </a>
+      </article>
+    </main>
+
+    <!--============ custom js link ============-->
+    <script src="main.js" defer></script>
+
+    <!--============ ionicon link ============-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
